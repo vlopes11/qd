@@ -104,7 +104,7 @@ mod misc;
 /// [`dd`]: macro.dd.html
 /// [module-level documentation]: index.html
 #[derive(Clone, Copy, Debug)]
-pub struct Double(f64, f64);
+pub struct Double(pub f64, pub f64);
 
 impl Double {
     /// Creates a `Double` with the two arguments as the internal components.
